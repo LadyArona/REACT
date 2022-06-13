@@ -2,4 +2,4 @@ npx create-react-app <nome>
 
 npm start
 
-reafce
+rafce
