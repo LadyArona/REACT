@@ -12,6 +12,7 @@ import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 import Message from './components/Message';
 import ShowUserNane from './components/ShowUserNane';
+import UserDetails from './components/UserDetails';
 
 function App() {
   const cars = [
@@ -29,6 +30,13 @@ function App() {
   const handleMessage = (msg) => {
     setMessage(msg)
   }
+
+  const users = [
+    {id:1, nome:'Talliny', idade:32, profissao:'Programadora'},
+    {id:2, nome:'Lucas', idade:29, profissao:'Gerente de Loja'},
+    {id:3, nome:'Joaquim', idade:1, profissao:'Estudante'},
+    {id:4, nome:'Lorizete', idade:60, profissao:'Do lar'}
+  ]
 
   return (
     <div className="App">
@@ -72,6 +80,15 @@ function App() {
       {/* State Lift */}
       <Message msg={message} />
       <ChangeMessageState handleMessage={handleMessage} />
+      {/* Desafio 4 */}
+      {users.map((user) => (
+        <UserDetails 
+          id={user.id}
+          nome={user.nome}
+          idade={user.idade}
+          profissao={user.profissao}
+        />
+      ))}
     </div>
   );
 }
