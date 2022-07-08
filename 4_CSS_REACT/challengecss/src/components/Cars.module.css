@@ -1,0 +1,11 @@
+.carNew {
+  margin: 15px 30em;
+  padding: 15px;
+  background-color: green;
+}
+
+.carUsed {
+  margin: 15px 30em;
+  padding: 15px;
+  background-color: orange;
+}

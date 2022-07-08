@@ -9,3 +9,18 @@ body {
 h1 {
   color: red;
 }
+
+.title {
+  background-color: #000;
+  color: #FFFFFF;
+
+  padding: 15px;
+}
+
+.red-title {
+  background-color: #000;
+  color: red;
+
+  padding: 15px;
+  border: red solid 5px;
+}
